@@ -8,7 +8,6 @@ type VisibilityState = {
 };
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
  const [isVisible, setIsVisible] = useState<VisibilityState>({
   skills: false,
   research: false
@@ -197,7 +196,7 @@ const Portfolio = () => {
             Skills & Expertise 💫
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <div key={skill.name} className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-gray-200">
                 <div className="flex justify-between items-center mb-3">
                   <span className="font-semibold text-gray-800">{skill.name}</span>
@@ -463,10 +462,10 @@ const Portfolio = () => {
       <section id="contact" className="py-16 px-6">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent">
-            Let's Connect! 💌
+            Let&apos;s Connect! 💌
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            I'm always excited to collaborate on new projects, discuss tech, or chat about content creation!
+            I&apos;m always excited to collaborate on new projects, discuss tech, or chat about content creation!
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
             <a
