@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Phone, MapPin, Star, Heart, Code, Video, Database, Award, ExternalLink, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, Star, Heart, Code, Video, Database, Award, ChevronDown } from 'lucide-react';
 type VisibilityState = {
   skills: boolean;
   research: boolean;
